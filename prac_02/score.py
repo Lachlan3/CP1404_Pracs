@@ -2,6 +2,7 @@
 CP1404/CP5632 - Practical
 Broken program to determine score status
 """
+import random
 
 
 def main():
@@ -12,7 +13,6 @@ def main():
         print("Invalid Input")
         continue_result = input("Generate Random Score (Y/N)? ")
     if continue_result != "N":
-        import random
         score = random.randint(0, 100)
         print("The Random Score is", score)
         print("The Result is", users_score(score))
